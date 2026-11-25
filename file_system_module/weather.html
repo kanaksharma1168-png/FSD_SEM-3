@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+
+<div class="weather-container">
+
+    <header>
+        <span class="logo">🌤️</span>
+        <h1>Weather Forecast</h1>
+    </header>
+
+    <div class="search-box">
+        <input type="text" id="cityInput"   
+        placeholder="Enter city name...">
+        <button onclick="searchWeather()">Search</button>
+    </div>
+
+    <div class="location" id="location">
+        Ghaziabad, India
+    </div>
+
+        <div class="current-weather">
+
+        <div class="temperature-section">
+
+            <div class="weather-icon" id="mainIcon">🌤️</div>
+
+            <div>
+                <div class="temperature" id="temperature">27°C</div>
+                <div class="condition" id="condition">Mainly clear</div>
+            </div>
+
+        </div>
+
+        <div class="weather-details">
+            <p>Humidity: <span id="humidity">45%</span></p>
+            <p>Wind: <span id="wind">11 km/h</span></p>
+        </div>
+
+    </div>
+
+    <h2 class="forecast-title">5-day forecast</h2>
+
+    <div class="forecast" id="forecast"></div>
+
+    <footer>Weather Forecast Dashboard</footer>
+
+</div>
+
+<script src="weather.js"></script>
+
+</body>
+</html>

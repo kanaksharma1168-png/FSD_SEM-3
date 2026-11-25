@@ -34,7 +34,7 @@ import fs from 'fs';
 
 // })
 
-fs.unlink("notes.txt",(err)=>{
+fs.unlink("new_notes.txt",(err)=>{
     if(err)
     {
         console.log(err);
